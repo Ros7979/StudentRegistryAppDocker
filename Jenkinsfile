@@ -12,7 +12,8 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Ros7979/StudentRegistryAppDocker.git'
+                git branch: 'main',               
+                    url: 'https://github.com/Ros7979/StudentRegistryAppDocker.git'
             }
         }
 
